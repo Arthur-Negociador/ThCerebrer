@@ -4,6 +4,7 @@ import Reveal from '../components/Reveal'
 import SectionHeading from '../components/SectionHeading'
 import GlassCard from '../components/GlassCard'
 import Button from '../components/Button'
+import SocialSection from '../components/SocialSection'
 
 const dailyTasks = [
   {
@@ -247,6 +248,9 @@ export default function Home() {
           </Reveal>
         </div>
       </section>
+
+      {/* ============ REDES SOCIAIS ============ */}
+      <SocialSection />
     </PageTransition>
   )
 }
