@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import Planos from './pages/Planos'
 import Ajuda from './pages/Ajuda'
 import Atualizacoes from './pages/Atualizacoes'
+import Pagamento from './pages/Pagamento'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/planos" element={<Planos />} />
           <Route path="/ajuda" element={<Ajuda />} />
           <Route path="/atualizacoes" element={<Atualizacoes />} />
+          <Route path="/pagamento" element={<Pagamento />} />
         </Routes>
       </AnimatePresence>
       <Footer />

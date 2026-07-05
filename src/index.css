@@ -79,6 +79,26 @@ body {
   transform: translateY(-4px);
 }
 
+/* Texto com gradiente dourado → esmeralda para o plano mais premium */
+.text-gradient-gold {
+  background: linear-gradient(120deg, #fbbf24 0%, #fde68a 40%, #6ee7b7 80%, #34d399 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Card premium: borda gradiente dourado/esmeralda com brilho suave.
+   O fundo interno precisa ser opaco para a borda não vazar para dentro. */
+.card-premium {
+  border-color: transparent;
+  background:
+    linear-gradient(160deg, #1a1912 0%, #121212 45%, #0f1613 100%) padding-box,
+    linear-gradient(150deg, rgba(251, 191, 36, 0.7), rgba(16, 185, 129, 0.6)) border-box;
+  box-shadow:
+    0 0 28px rgba(251, 191, 36, 0.12),
+    0 0 60px rgba(16, 185, 129, 0.14);
+}
+
 /* Linha de grade sutil ao fundo do hero */
 .bg-grid {
   background-image:
